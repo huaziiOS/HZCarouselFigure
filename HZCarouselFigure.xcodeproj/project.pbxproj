@@ -226,7 +226,6 @@
 				TargetAttributes = {
 					89DB152A1F09D2A600BA228A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = RF885RZM5Q;
 						ProvisioningStyle = Automatic;
 					};
 					89DB153E1F09D2A600BA228A = {
@@ -501,7 +500,7 @@
 			baseConfigurationReference = 3A3B8E68EB8FC3DAFD488BB2 /* Pods-HZCarouselFigure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RF885RZM5Q;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HZCarouselFigure/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -516,7 +515,7 @@
 			baseConfigurationReference = 0DAF6A7CD236F15892EC70B9 /* Pods-HZCarouselFigure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RF885RZM5Q;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HZCarouselFigure/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
