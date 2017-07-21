@@ -4,7 +4,7 @@
 
 三种思路实现无限轮播
 
-![Image text](HZCarouselFigure/HZCarouselFigure/Assets.xcassets/1.imageset/1.jpg)
+![Image text]()
 
 1. 前后添加图片;
 
