@@ -1,5 +1,7 @@
 # HZCarouselFigure
 
+要求: Swift 3.0, Xcode 8.0
+
 三种思路实现无限轮播
 
 1. 前后添加图片: 
