@@ -16,6 +16,10 @@
 		89DB154F1F09D2A600BA228A /* HZCarouselFigureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB154E1F09D2A600BA228A /* HZCarouselFigureUITests.swift */; };
 		89DB155D1F09D3AE00BA228A /* CarouselFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB155C1F09D3AE00BA228A /* CarouselFigureView.swift */; };
 		89DB155F1F09E97A00BA228A /* UIImageViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB155E1F09E97A00BA228A /* UIImageViewExtention.swift */; };
+		89DB15671F0B26F500BA228A /* CarouselFigureViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB15661F0B26F500BA228A /* CarouselFigureViewTwo.swift */; };
+		89DB16A11F21D0E700BA228A /* CarouselfigureViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB16A01F21D0E700BA228A /* CarouselfigureViewThree.swift */; };
+		89DB16A31F21DAA400BA228A /* CarouselFigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB16A21F21DAA400BA228A /* CarouselFigureCell.swift */; };
+		89DB16A51F21F8F100BA228A /* ShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB16A41F21F8F100BA228A /* ShowVC.swift */; };
 		E0EF8543E0F582AD23F0E0D8 /* Pods_HZCarouselFigure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830756E098D6A6552F12A064 /* Pods_HZCarouselFigure.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,10 @@
 		89DB15501F09D2A600BA228A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89DB155C1F09D3AE00BA228A /* CarouselFigureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFigureView.swift; sourceTree = "<group>"; };
 		89DB155E1F09E97A00BA228A /* UIImageViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtention.swift; sourceTree = "<group>"; };
+		89DB15661F0B26F500BA228A /* CarouselFigureViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFigureViewTwo.swift; sourceTree = "<group>"; };
+		89DB16A01F21D0E700BA228A /* CarouselfigureViewThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselfigureViewThree.swift; sourceTree = "<group>"; };
+		89DB16A21F21DAA400BA228A /* CarouselFigureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFigureCell.swift; sourceTree = "<group>"; };
+		89DB16A41F21F8F100BA228A /* ShowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +128,11 @@
 				89DB152E1F09D2A600BA228A /* AppDelegate.swift */,
 				89DB155E1F09E97A00BA228A /* UIImageViewExtention.swift */,
 				89DB15301F09D2A600BA228A /* ViewController.swift */,
+				89DB16A41F21F8F100BA228A /* ShowVC.swift */,
 				89DB155C1F09D3AE00BA228A /* CarouselFigureView.swift */,
+				89DB15661F0B26F500BA228A /* CarouselFigureViewTwo.swift */,
+				89DB16A01F21D0E700BA228A /* CarouselfigureViewThree.swift */,
+				89DB16A21F21DAA400BA228A /* CarouselFigureCell.swift */,
 				89DB15321F09D2A600BA228A /* Main.storyboard */,
 				89DB15351F09D2A600BA228A /* Assets.xcassets */,
 				89DB15371F09D2A600BA228A /* LaunchScreen.storyboard */,
@@ -226,6 +238,7 @@
 				TargetAttributes = {
 					89DB152A1F09D2A600BA228A = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = RF885RZM5Q;
 						ProvisioningStyle = Automatic;
 					};
 					89DB153E1F09D2A600BA228A = {
@@ -342,8 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DB16A31F21DAA400BA228A /* CarouselFigureCell.swift in Sources */,
+				89DB16A51F21F8F100BA228A /* ShowVC.swift in Sources */,
+				89DB15671F0B26F500BA228A /* CarouselFigureViewTwo.swift in Sources */,
 				89DB15311F09D2A600BA228A /* ViewController.swift in Sources */,
 				89DB155D1F09D3AE00BA228A /* CarouselFigureView.swift in Sources */,
+				89DB16A11F21D0E700BA228A /* CarouselfigureViewThree.swift in Sources */,
 				89DB152F1F09D2A600BA228A /* AppDelegate.swift in Sources */,
 				89DB155F1F09E97A00BA228A /* UIImageViewExtention.swift in Sources */,
 			);
@@ -499,10 +516,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A3B8E68EB8FC3DAFD488BB2 /* Pods-HZCarouselFigure.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RF885RZM5Q;
 				INFOPLIST_FILE = HZCarouselFigure/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanzhaohua.HZCarouselFigure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,10 +530,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0DAF6A7CD236F15892EC70B9 /* Pods-HZCarouselFigure.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RF885RZM5Q;
 				INFOPLIST_FILE = HZCarouselFigure/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanzhaohua.HZCarouselFigure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
