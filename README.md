@@ -7,6 +7,7 @@
 ![效果图](http://upload-images.jianshu.io/upload_images/1674402-64eae4a5117d1b53.gif?imageMogr2/auto-orient/strip)
 
 ##实现思路:
+
 ###第一种: 在原图片集合的基础上, 分别在原数据的开始及结尾处插入一张图片, 内容分别是原图片集合的最后一张和第一张, 新图片集合.count = 原图片集合.count + 2; 当滑动到第一张或者最后一张图片时, "偷偷地"将当前偏移位置切换到对应图片的位置(展示第一张图片或者最后一张图片的ImageView所在位置), 详见下图:
 ![无限轮播方式一.png](http://upload-images.jianshu.io/upload_images/1674402-ee05a8a24af7f303.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
