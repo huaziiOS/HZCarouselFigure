@@ -50,7 +50,7 @@ class ShowVC: UIViewController {
     private func methodTwo() {
         let carouselViewTwo = CarouselFigureViewTwo(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 200))
         carouselViewTwo.pageContentMode = .Center
-        carouselViewTwo.localImageArray = ["5", "4", "3", "2", "1"]
+        carouselViewTwo.localImageArray = ["2", "1"]
         view.addSubview(carouselViewTwo)
     }
     
