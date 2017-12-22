@@ -21,7 +21,7 @@ extension UIImageView {
     
     public func k_setImageWithUrlString(urlString: String?, placeholderImageStr: String?) {
         let placeholderImage = UIImage(named: placeholderImageStr ?? "")
-        if (urlString?.characters.count ?? 0) <= 0 {
+        if (urlString?.count ?? 0) <= 0 {
            image = placeholderImage
         } else if urlString?.contains("http:") == true || urlString?.contains("https:") == true {
             self.kf.setImage(with: ImageResource(downloadURL: URL(string: urlString!)!), placeholder: placeholderImage)

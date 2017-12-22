@@ -122,6 +122,11 @@ class CarouselfigureViewThree: UIView {
             }
         }
     }
+    
+    /**
+     图片实际数量
+     */
+    fileprivate var actualImageCount: Int = 0
 
     /**
      真实展示的item数量
@@ -215,9 +220,9 @@ extension CarouselfigureViewThree {
             setPageControl()
         }
         
-        actualItemCount = imageBox.imageArray.count
+        actualImageCount = imageBox.imageArray.count
         if isEndLessScroll {
-            actualItemCount = actualItemCount * 150
+            actualItemCount = actualImageCount * 150
             let indexPath = IndexPath(item: actualItemCount / 2, section: 0)
             collectionView?.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition(), animated: false)
             setTimer()
@@ -337,8 +342,9 @@ extension CarouselfigureViewThree: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let index = indexPath.row % 75 % actualImageCount + 1
         if delegate != nil {
-            delegate?.imageSelectedAtIndex(index: indexPath.row)
+            delegate?.imageSelectedAtIndex(index: index)
         }
     }
 }

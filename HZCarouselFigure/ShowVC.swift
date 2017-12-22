@@ -50,7 +50,8 @@ class ShowVC: UIViewController {
     private func methodTwo() {
         let carouselViewTwo = CarouselFigureViewTwo(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 200))
         carouselViewTwo.pageContentMode = .Center
-        carouselViewTwo.localImageArray = ["2", "1"]
+        carouselViewTwo.localImageArray = ["3", "4"]
+        carouselViewTwo.delegate = self
         view.addSubview(carouselViewTwo)
     }
     
@@ -58,6 +59,7 @@ class ShowVC: UIViewController {
         let carouselViewThree = CarouselfigureViewThree(frame: CGRect(x: 0, y: 200, width: view.bounds.width, height: 200))
         carouselViewThree.pageContentMode = .Left
         carouselViewThree.localImageArray = ["3", "4", "5", "2", "1"]
+        carouselViewThree.delegate = self
         view.addSubview(carouselViewThree)
     }
 

@@ -239,18 +239,25 @@ extension CarouselFigureViewTwo {
             let imageView = UIImageView(frame: CGRect(x: CGFloat(i) * self.bounds.width, y: 0, width: self.bounds.width, height: self.bounds.height))
             imageView.contentMode = imageContentMode
             
-            var imageSource = imageBox.imageArray.first!
-            if i == 0 {
-                imageSource = imageBox.imageArray.last!
-            } else if i == 2 {
-                imageSource = imageBox.imageArray[1]
+            var imageSource: ImageSource!
+            if imageBox.imageArray.count == 1 {
+                imageSource = imageBox.imageArray.first!
+            } else {
+                imageSource = imageBox.imageArray.first!
+                if i == 0 {
+                    imageSource = imageBox.imageArray.last!
+                } else if i == 2 {
+                    imageSource = imageBox.imageArray[1]
+                }
             }
             
             switch imageSource {
-            case let .Local(name: name):
+            case .some(let .Local(name: name)):
                 imageView.image = UIImage(named: name)
-            case let .Network(urlStr: urlStr):
+            case .some(let .Network(urlStr: urlStr)):
                 imageView.k_setImageWithUrlString(urlString: urlStr, placeholderImageStr: placeHolderImage ?? "")
+            case .none:
+                break
             }
             scrollView?.addSubview(imageView)
             imageViewArray.append(imageView)
@@ -323,7 +330,7 @@ extension CarouselFigureViewTwo {
     
     @objc fileprivate func tapAction(sender: UITapGestureRecognizer) {
         if delegate != nil {
-            delegate!.imageSelectedAtIndex(index: currentIndex)
+            delegate!.imageSelectedAtIndex(index: currentIndex + 1)
         }
     }
 }
@@ -333,7 +340,6 @@ extension CarouselFigureViewTwo: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let index = scrollView.contentOffset.x / self.bounds.width
-        print(index)
 //        var currentIndex = (index - 1.0).truncatingRemainder(dividingBy: 3.0) + 0.5
 //        print(currentIndex)
 //        if currentIndex == 1.0 {

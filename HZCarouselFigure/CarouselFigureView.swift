@@ -321,9 +321,16 @@ extension CarouselFigureView {
 extension CarouselFigureView {
     
     @objc fileprivate func tapAction(sender: UITapGestureRecognizer) {
-        let index = scrollView!.contentOffset.x / self.bounds.width
+        var index = Int(scrollView!.contentOffset.x / self.bounds.width)
+        if index == 0 {
+            index = imageBox.imageArray.count - 3
+        } else if index == imageBox.imageArray.count - 1 {
+            index = 0
+        } else {
+            index = index - 1
+        }
         if delegate != nil {
-            delegate!.imageSelectedAtIndex(index: Int(index))
+            delegate!.imageSelectedAtIndex(index: Int(index) + 1)
         }
     }
     
